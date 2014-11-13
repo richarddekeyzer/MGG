@@ -1,7 +1,30 @@
 <script language="javascript">
-<!--//
-/*This Script allows people to enter by using a form that asks for a
-UserID and Password*/
+<!--
+/* ww_o_01.js 
+   Dit script zorgt voor het wachtwoord dat toegang geeft tot opdracht 1. Wordt aangevraagd op pagina opdrachten */
+   
+function ww_o_01(form) 
+{
+if form.ww_o_01.value=="arnhem")
+  {
+  location="opdracht_01.html"
+  }
+else
+  {alert("wachtwoord is onjuist")}
+//-->
+
+<center>
+wachtwoord: <form name="login"><input
+name="ww_o_01" type="text">
+<br/>
+<input type="button" value="check"
+onClick="ww_o_01(this.form)"><br>
+<input
+type="Reset"></form></center>
+
+
+<script language="javascript">
+<!--
 function pasuser(form) {
 if (form.id.value=="JavaScript") { 
 if (form.pass.value=="Kit") {              
