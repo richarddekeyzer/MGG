@@ -1,51 +1,43 @@
+
+
 <script language="javascript">
 <!--
-/* ww_o_01.js 
-   Dit script zorgt voor het wachtwoord dat toegang geeft tot opdracht 1. Wordt aangevraagd op pagina opdrachten */
-   
-function ww_o_01(form) 
+function wachtwoord_01(ww_01)
 {
-if form.ww_o_01.value=="arnhem")
-  {
-  location="opdracht_01.html"
-  }
-else
-  {alert("wachtwoord is onjuist")}
-//-->
-
-<center>
-wachtwoord: <form name="login"><input
-name="ww_o_01" type="text">
-<br/>
-<input type="button" value="check"
-onClick="ww_o_01(this.form)"><br>
-<input
-type="Reset"></form></center>
-
-
-<script language="javascript">
-<!--
-function pasuser(form) {
-if (form.id.value=="JavaScript") { 
-if (form.pass.value=="Kit") {              
-location="page2.html" 
-} else {
-alert("Invalid Password")
+	if (ww_01.wachtwoord.value=="richard")
+	{ 
+		location="page2.html" 
+	}
+	else
+	{
+		alert("Wachtwoord is fout")
+	}
 }
-} else {  alert("Invalid UserID")
-}
+
+function wachtwoord_02(ww_02)
+{
+	if (ww_02.wachtwoord.value=="brigitte")
+	{ 
+		location="page3.html" 
+	}
+	else
+	{
+		alert("Wachtwoord is fout")
+	}
 }
 //-->
 </script>
 
-<center>
-<table bgcolor="white" cellpadding="12" border="1">
-<tr><td colspan="2"><center><h1><i><b>Login
-Area</b></i></h1></center></td></tr>
-<tr><td><h1><i><b>UserID:</b></i></h1></td><td><form name="login"><input
-name="id" type="text"></td></tr>
-<tr><td><h1><i><b>Password:</b></i></h1></td><td><input name="pass"
-type="password"></td></tr>
-<tr><td><center><input type="button" value="Login"
-onClick="pasuser(this.form)"></center></td><td><center><br><input
-type="Reset"></form></td></tr></table></center> 
+<center><form name="ww_01">
+Wachtwoord: <input
+name="wachtwoord" type="text"></br>
+<input type="button" value="check"
+onClick="wachtwoord_01(this.form)"></center></form> 
+<br/><br/>
+
+
+<center><form name="ww_02">
+Wachtwoord: <input
+name="wachtwoord" type="text"></br>
+<input type="button" value="check"
+onClick="wachtwoord_02(this.form)"></center></form>
