@@ -1,0 +1,49 @@
+<html>
+<head>
+
+
+<script language="javascript">
+<!--
+function wachtwoord_01(ww_01)
+{
+	if (ww_01.wachtwoord.value=="richard")
+	{ 
+		location="page2.html" 
+	}
+	else
+	{
+		alert("Wachtwoord is fout")
+	}
+}
+
+function wachtwoord_02(ww_02)
+{
+	if (ww_02.wachtwoord.value=="brigitte")
+	{ 
+		location="page3.html" 
+	}
+	else
+	{
+		alert("Wachtwoord is fout")
+	}
+}
+//-->
+</script>
+</head>
+<body>
+
+<p><form name="ww_01">
+Wachtwoord: <input
+name="wachtwoord" type="text"></br>
+<input type="button" value="check"
+onClick="wachtwoord_01(this.form)"></form></p>
+<br/><br/>
+
+
+<p><form name="ww_02">
+Wachtwoord: <input
+name="wachtwoord" type="text"></br>
+<input type="button" value="check"
+onClick="wachtwoord_02(this.form)"></form></p>
+</body>
+</html>
